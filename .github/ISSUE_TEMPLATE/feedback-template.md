@@ -18,3 +18,8 @@ assignees: ''
 - [ ] O repositório está organizado
 - [ ] O ritmo do projeto está de acordo com o esperado
 - [ ] Estão comentando nas issues
+
+# Sugestões de Melhorias
+
+- [ ] Quem as issues em issues menores
+- [ ] Olhem esse projeto como referencia em tal aspecto
