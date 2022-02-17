@@ -1,13 +1,14 @@
 from bs4 import BeautifulSoup
-from urllib.request import urlopen
+import requests
 
-# if has Chinese, apply decode()
-html = urlopen("https://mofanpy.com/static/scraping/basic-structure.html").read().decode('utf-8')
+def dados(url):
+    response = requests.get(url)
+    html = response.text
+    soup = BeautifulSoup(html, 'html.parser') 
 
-soup = BeautifulSoup(html, features='lxml')
-print(soup.h1)
-print('\n', soup.p)
+    tabela = soup.findAll("td")
+    print(tabela)
 
-all_href = soup.find_all('a')
-all_href = [l['href'] for l in all_href]
-print('\n', all_href)
+dados("https://brasil.io/dataset/gastos-deputados/cota_parlamentar/")
+
+ 
