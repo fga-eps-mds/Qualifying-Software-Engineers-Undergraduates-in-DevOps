@@ -2,10 +2,10 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 # if has Chinese, apply decode()
-html = urlopen("https://mofanpy.com/static/scraping/basic-structure.html").read().decode('utf-8')
+html = urlopen("https://brasil.io/datasets/").read().decode('utf-8')
 
 soup = BeautifulSoup(html, features='lxml')
-print(soup.h1)
+print(soup.h4)
 print('\n', soup.p)
 
 all_href = soup.find_all('a')
