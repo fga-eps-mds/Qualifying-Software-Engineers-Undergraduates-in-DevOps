@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 from urllib.request import urlopen
 
 def playingWebScraping():
-    html = urlopen("https://mofanpy.com/static/scraping/basic-structure.html").read().decode('utf-8')
+    html = urlopen("http://quotes.toscrape.com/").read().decode('utf-8')
 
     soup = BeautifulSoup(html, features='lxml')
     print(soup.h1)
