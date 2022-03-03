@@ -7,3 +7,9 @@ Qualifying Software Engineers Undergraduates in DevOps - Challenges of introduci
 
 ### Paper 
 [Link to Preprint](https://arxiv.org/pdf/2102.06662.pdf) 
+
+
+
+## Course Material
+
+- 2021.2 - [Here](Turmas/2021-2.md)
