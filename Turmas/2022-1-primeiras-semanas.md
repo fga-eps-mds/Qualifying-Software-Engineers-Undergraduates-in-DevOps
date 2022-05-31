@@ -47,6 +47,15 @@ O material dos treinamentos podem ser links para tutoriais com boa qualidade, ap
 
 Todos os treinamentos devem ser planejados e registrados nas issues.
 
+Treinamentos a serem realizados:
+
+- [ ] Métodos ágeis - o que são métodos ágeis, o que é Scrum e as práticas do Scrum
+- [ ] Configuração de ambiente - instalar bibliotecas/ferramentas necessárias para o projeto. Instalando linux, git, pip, etc.
+- [ ] Git - o que é, quais são os principais comandos (clone, push, pull, commit, add, remove)
+- [ ] Github - práticas das issue (Criar issue, comentar issues etc), documentação (markdown, estrutura pastas etc), pull request, branches
+- [ ] Gitpage - reaproveitar tema/estrutura de outro time, etc.
+
+
 ## Registro de Horas Trabalhadas
 
 Vocês devem controlar em um primeiro momento o tempo de dedicação em horas de cada membro do time. Para isso, toda vez que um participante trabalha para o projeto, monitora o tempo dedicado e registra em um local que o time definiu (planilha de horas compartilhada, algum software etc)
