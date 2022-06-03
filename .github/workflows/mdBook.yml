@@ -1,10 +1,10 @@
-name: Rust
+name: mdBook
 
 on:
   push:
-    branches: [ gh-pages ]
+    branches: [main]
   pull_request:
-    branches: [  gh-pages ]
+    branches: [main]
 
 env:
   CARGO_TERM_COLOR: always
@@ -28,12 +28,12 @@ jobs:
 
     - name: Build book
       run: |
+          cd ebook
           python3 tools/generate_summary.py
-          cat src/SUMMARY.md
           mdbook build
-          python3 tools/fix_dollar_sign.py
+          python3 tools/fix_html_content.py
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./book
+        publish_dir: ./ebook/book
