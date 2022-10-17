@@ -3,7 +3,7 @@
 As primeiras semanas da disciplinas são as mais confusas, complexas e umas das mais importante.
 Vocês não sabem exatamente o que tem que ser feito, como tem que ser feito, e o que é esperado. Acreditem que faz parte da experiência. Esse documento tenta trazer um guiar para fazer bem as primeiras semanas.
 
-- [ ] Dinâmicas para conhecer todos os membros do time
+- [ ] Dinâmicas para conhecer todos os membros do time 
 - [ ] Mapeamento das habilidades e dificuldades de cada pessoa do time
 - [ ] Estudos em pares nos seguintes temas: Scrum, papéis/habilidades ágeis (Scrum master, Product Owner, Arquiteto/DevOps), documentos de projeto de software (Documento de Visão, Documento de arquitetura, TAP), documentos ageis (issue, pull request, documento de sprint)
 - [ ] Treinamentos - configuração de ambiente (intalação de git, etc), uso de principais comandos git, treinamento práticas ágeis. Podem pedir para algum monitor dar o treinamento, ou alguém do time prepara o treinamento.
@@ -74,5 +74,67 @@ Deve ter também documentação do planejamento e revisão da sprint.
 
 # Ponteiros
 
+Ler os post mortem dos outros grupos dos semestres anteriores. O documento post mortem é um documento com o objetivo de deixar as lições aprendidas, o que fizeram errado, o que foi importante pra eles, o que eles dariam de conselhos para vocês. Aproveitem esse material para entender mais a disciplina, o que é esperado de você, como gerir bem seu tempo e se organizar pra disciplina. 
 
+## Semestre anterior
+- [GInvest](https://fga-eps-mds.github.io/GFour-Invext/#/pages/postmortem)
+- [OiaMoeda](https://fga-eps-mds.github.io/2022-1-OiaAMoeda/#/Docs/Post_mortem)
+- [PokerRanking](https://fga-eps-mds.github.io/2022-1-PokeRanking/Documentação/post-mortem/)
+- [CollegeFlow](https://fga-eps-mds.github.io/CollegeFlow/#/postmortem)
+
+## Outros semestres
+- [Annubis](https://fga-eps-mds.github.io/2020.2-Anunbis/post_mortem/)
+- [Acacia](https://fga-eps-mds.github.io/2019.2-Acacia/#/postmortem)
+
+
+
+# Tutoriais
+[Web Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap)
+[Spellbook of Modern WebDev](https://github.com/dexteryy/spellbook-of-modern-webdev)
+[System Design Primer](https://github.com/donnemartin/system-design-primer)
+
+# Ferramentas
+
+
+# Referências
+
+## Engenharia de Software
+[Engenharia de Software Moderna](https://engsoftmoderna.info)
+
+[Code Complete [Steve McConnell] ](https://www.goodreads.com/book/show/4845.Code_Complete)
+
+[Clean Code: A Handbook of Agile Software Craftsmanship [Uncle Bob]](https://www.goodreads.com/book/show/3735293-clean-code)
+
+[The Pragmatic Programmer: From Journeyman to Master [Andy Hunt, Dave Thomas]](https://www.goodreads.com/book/show/4099.The_Pragmatic_Programmer)
+
+## Arquitetura de Software
+
+[Clean Architecture [Uncle Bob]](https://www.goodreads.com/book/show/18043011-clean-architecture)
+
+[Building Evolutionary Architectures: Support Constant Change [Neal Ford, Rebecca Parsons, Patrick Kua] ](https://www.goodreads.com/book/show/35755822-building-evolutionary-architectures)
+
+## Microsserviços
+
+[Building Microservices: Designing Fine-Grained Systems [Sam Newman]](https://www.goodreads.com/book/show/22512931-building-microservices)
+
+## Design
+
+[The Modern Web Design Process [Jeff Cardello, John M. Williams]](https://ebooks.webflow.com/ebook/the-modern-web-design-process)
+
+## Métodos Ágeis 
+[Scaling Agile @ Spotify with Tribes, Squads, Chapters & Guilds [Henrik Kniberg, Anders Ivarsson]](http://blog.crisp.se/wp-content/uploads/2012/11/SpotifyScaling.pdf)
+
+[Software Engineering: A Practitioner's Approach](https://www.goodreads.com/book/show/142783.Software_Engineering)
+
+[Kanban em 10 passos [Jesper Boeg]](https://www.goodreads.com/book/show/33870635-kanban-em-10-passos)
+
+[Extreme Programming Explained: Embrace Change [ Kent Beck, Cynthia Andres]](https://www.goodreads.com/book/show/18174.Extreme_Programming_Applied)
+
+## DevOps 
+
+[The DevOps Handbook [Gene Kim, Jez Humble, Patrick Debois, John Willis]](https://www.goodreads.com/book/show/26083308-the-devops-handbook)
+
+[Site Reliability Engineering: How Google Runs Production Systems [Betsy Beyer, Chris Jones, Jennifer Petoff, Niall Murphy]](https://www.goodreads.com/book/show/27968891-site-reliability-engineering)
+
+[Accelerate: The Science of Lean Software and DevOps [Nicole Forsgren, Jez Humble, Gene Kim]](https://www.goodreads.com/book/show/39080433-accelerate)
 
