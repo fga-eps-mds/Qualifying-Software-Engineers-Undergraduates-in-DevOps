@@ -14,4 +14,6 @@ Qualifying Software Engineers Undergraduates in DevOps - Challenges of introduci
 
 ## Course Material
 
+- 2022.1 - [Here](Turmas/2022-1.md)
 - 2021.2 - [Here](Turmas/2021-2.md)
+
