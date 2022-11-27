@@ -74,6 +74,15 @@ As aulas síncronas terão o timebox de 40 minutos.
 
 - **Detalhamento da avaliação**: Código-Fonte/entregas (30%), (II) Práticas ageis (25%), (III)  Requisitos Especificados/issues (10%), Protótipo (15%), (IV) Padrões de software livre, (V) critério extra(10%)
 
+### Entregáveis
+
+- Código Fonte
+- Documentação de comunidades de software livre: Readme, codigo de conduta, licença, issues, guia de contribuição, templates de issues e pull request. 
+- StoryMap: mapeamento dos épicos, features, histórias de usuários a serem entregues.
+- Práticas ágeis (documentação das issues, pratica de commits, pareamento, arquitetura de software)
+- gitpage: o gitpage é a propaganda do produto de software. Focado no usuário (ex: https://www.tensorflow.org)
+
+
 
 ## Sprint 8
 - Praticas ageis - testes unitarios (automacao)
