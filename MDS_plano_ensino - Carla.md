@@ -143,6 +143,7 @@ O cronograma das aulas e os detalhamento da avaliação das Releases 1 e 2 estã
 ### Datas das Releases 1 e 2
 
 - Release 1 (major) - 16 de dezembro de 2022
+
 - Release 2 (major) - 26 de janeiro de 2022
 
 ## Bibliografia Basica
