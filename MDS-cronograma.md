@@ -68,7 +68,7 @@ As aulas síncronas terão o timebox de 40 minutos.
 
 - **Tempo de apresentação**: 15 minutos 
 
-- **Artefatos avaliados**: (I) Especificação das historias de usuários (critérios de aceitação), (II) Configuração do repositório de acordo com os padrões de comunidade de software livre (Github), (III) Protótipo de alta fidelidade, (IV) Código
+- **Artefatos avaliados**: (I) Especificação dos épicos, features e  historias de usuários (critérios de aceitação), (II) Configuração do repositório de acordo com os padrões de comunidade de software livre (Github), (III) Protótipo de alta fidelidade, (IV) Código
 
 - **Praticas ágeis avaliadas**: pareamento, issues, Pull requests, produtividade, participação nos rituais, desempenho
 
@@ -107,7 +107,7 @@ As aulas síncronas terão o timebox de 40 minutos.
 - Buffer de Contingência
 
 ## Sprint 16 - Release 2
-- **A Release 2** é realizada no horario do almoco (11h30 -14h00) durante toda a semana. A ordem de apresentacao é sorteada, mas os grupos sao podem trocar entre si a ordem. 
+- **A Release 2**  A ordem de apresentacao é sorteada, mas os grupos sao podem trocar entre si a ordem. 
 
 - **Peso da R2** - 60% da nota de projeto
 
