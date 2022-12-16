@@ -5,15 +5,13 @@ multilingual = false
 src = "src"
 title = "Qualifying Software Engineers Undergraduates in DevOps"
 
-[preprocessor.count_time]
-command = "python3 tools/count_estimated_time.py"
 renderer = ["html"]
 
 [output.html]
 default-theme = "rust"
 copy-fonts = true
 preferred-dark-theme = "navy"
-git-repository-url = "https://github.com/fga-eps-mds/Qualifying-Software-Engineers-Undergraduates-in-DevOps"
+git-repository-url = "https://github.com/fga-eps-mds/Qualifying-Software-Engineers-Undergraduates-in-DevOps/ebook"
 
 [output.html.fold]
 enable = true
