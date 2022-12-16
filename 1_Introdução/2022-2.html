@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<html lang="pt-br" class="sidebar-visible no-js rust">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>2022-2 - Qualifying Software Engineers Undergraduates in DevOps</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../1_Introdução/index.html"><strong aria-hidden="true">1.</strong> 1. Introdução</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../1_Introdução/2021-2.html"><strong aria-hidden="true">1.1.</strong> 2021-2</a></li><li class="chapter-item "><a href="../1_Introdução/2022-2-primeiras-semanas.html"><strong aria-hidden="true">1.2.</strong> 2022-2-Primeiras-Semanas</a></li><li class="chapter-item expanded "><a href="../1_Introdução/2022-2.html" class="active"><strong aria-hidden="true">1.3.</strong> 2022-2</a></li></ol></li><li class="chapter-item expanded "><a href="../2-blog-posts/index.html"><strong aria-hidden="true">2.</strong> 2-Blog-Posts</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Qualifying Software Engineers Undergraduates in DevOps</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/fga-eps-mds/Qualifying-Software-Engineers-Undergraduates-in-DevOps/ebook" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="plano-de-ensino"><a class="header" href="#plano-de-ensino">Plano de Ensino</a></h1>
+<p>O plano de Ensino está disponibilizado <a href="https://github.com/fga-eps-mds/A-Disciplina-MDS-EPS/blob/master/PlanosDeEnsino/MDS_plano_ensino%20-%20Carla.md">aqui</a></p>
+<h1 id="organização-da-disciplina"><a class="header" href="#organização-da-disciplina">Organização da Disciplina</a></h1>
+<ul>
+<li>
+<p>Organização do Github com todos os projetos já desenvolvidos -  <a href="https://github.com/fga-eps-mds/">https://github.com/fga-eps-mds/</a></p>
+</li>
+<li>
+<p>Material didático de apoio (aulas, material teórico e tutoriais feito pelos alunos) - <a href="https://github.com/fga-eps-mds/A-Disciplina-MDS-EPS">https://github.com/fga-eps-mds/A-Disciplina-MDS-EPS</a></p>
+</li>
+<li>
+<p>Videos com o material assincrono da disciplina - <a href="https://www.youtube.com/channel/UC6VgsVODs17IAHuWF2HCfUQ">Canal Youtube</a></p>
+</li>
+</ul>
+<h1 id="projetosgrupos"><a class="header" href="#projetosgrupos">Projetos/Grupos</a></h1>
+<p>O tema do semestre é Visualização de dados. Para isso, precisamos de DADOS!! As equipes, ou squads, são compostas por até 8 integrantes, serão responsável pela Extração de Dados (Webscraping), pelo armazenamentos dos dados (bancos de dados) e pela apresentação/processamento dos dados.</p>
+<p>Quais são as fontes dos dados? Vocês escolhem.. pode ser requisição de uma API, pode ser via webscraping, pode ser fazendo a copia de um banco de dados. Alguns contextos interessantes: Brasil.io, o proprio Siga da unb, dados de saúde, etc. </p>
+<p>Cada grupo deve definir o seu próprio escopo.</p>
+<h1 id="apresentações"><a class="header" href="#apresentações">Apresentações</a></h1>
+<ul>
+<li>Release 1 (major) - 10 de dezembro de 2022</li>
+<li>Release 2 (major) - 26 de janeiro de 2022</li>
+</ul>
+<h2 id="release-i"><a class="header" href="#release-i">Release I</a></h2>
+<ul>
+<li>
+<p><strong>A Release 1</strong> A ordem de apresentacao é sorteada, mas os grupos sao podem trocar entre si a ordem. </p>
+</li>
+<li>
+<p><strong>Peso da R1</strong> - 40% da nota de projeto</p>
+</li>
+<li>
+<p><strong>Tempo de apresentação</strong>: 15 minutos </p>
+</li>
+<li>
+<p><strong>Artefatos avaliados</strong>: (I) Documento de Visão do Projeto, (II) Planejamento/Comunicação Interna e Externa (agenda de trabalho + ferramentas), Documento de Arquitetura do Projeto, (III) Especificação das historias de usuários (critérios de aceitação), (IV) Configuração do repositório de acordo com os padrões de comunidade de software livre (Github), (V) Wiki atualizada (VI) Protótipo de alta fidelidade </p>
+</li>
+<li>
+<p><strong>Praticas avaliadas</strong>: pareamento, produtividade, participação nos rituais, desempenho</p>
+</li>
+<li>
+<p><strong>Detalhamento da avaliação</strong>: Código-Fonte/entregas (30%), (II) Coerência entre a documentação e implementação (10%), (III) Documentação: Doc. visão (15%), doc arq (15%), Requisitos Especificados (10%), Protótipo (10%), (IV) critério extra(10%)</p>
+</li>
+</ul>
+<h2 id="release-ii"><a class="header" href="#release-ii">Release II</a></h2>
+<ul>
+<li>
+<p><strong>A Release 2</strong>  A ordem de apresentacao é sorteada, mas os grupos sao podem trocar entre si a ordem. </p>
+</li>
+<li>
+<p><strong>Peso da R2</strong> - 60% da nota de projeto</p>
+</li>
+<li>
+<p><strong>Tempo de apresentacao</strong>: 15 minutos </p>
+</li>
+<li>
+<p><strong>Detalhe da avaliacao</strong>:  (I) Codigo-fonte entregue (60%): features, implantacao, qualidade, cobertura de testes, testes de aceitacao, (II) documentação/evidências da execução metodologia de desenvolvimento contínua (30%), (III) Tracking (10%)</p>
+</li>
+</ul>
+<h1 id="critérios-de-avaliação"><a class="header" href="#critérios-de-avaliação">Critérios de Avaliação</a></h1>
+<p>Os critérios de avaliação estão detalhados no plano e ensino <a href="https://github.com/fga-eps-mds/A-Disciplina-MDS-EPS/blob/master/PlanosDeEnsino/MDS_plano_ensino%20-%20Carla.md">aqui</a>. </p>
+<p>As notas são dadas em cada critério a partir do nível de maturidade individual na disciplina, de acordo com as três categorias abaixo:</p>
+<ul>
+<li>Três categorias de avaliação: &quot;iniciante&quot;, &quot;saudável&quot;, &quot;maduro&quot; e três aspectos de avaliação: &quot;Código&quot;, &quot;Equipe&quot; e &quot;Projeto&quot;</li>
+</ul>
+<h2 id="etapa-iniciante"><a class="header" href="#etapa-iniciante">Etapa Iniciante</a></h2>
+<ul>
+<li>peso: 20%</li>
+<li>Código
+<ul>
+<li>repositório configurado</li>
+<li>licença de software</li>
+<li>ambiente de desenvolvimento configurado</li>
+</ul>
+</li>
+<li>Equipe
+<ul>
+<li>atribuições de papéis</li>
+<li>standup e mobs iniciais rolando</li>
+<li>ambiente de trabalho informativo criado (Github)</li>
+<li>definida política de horas extras</li>
+<li>planilha para controle de horas trabalhadas</li>
+<li>execução dos rituais do scrum</li>
+</ul>
+</li>
+<li>Projeto
+<ul>
+<li>meio de comunicação definido</li>
+<li>Documentos do projeto revisados</li>
+</ul>
+</li>
+</ul>
+<h2 id="etapa-saudável"><a class="header" href="#etapa-saudável">Etapa Saudável</a></h2>
+<ul>
+<li>peso: 30%</li>
+<li>Código
+<ul>
+<li>commits frequentes</li>
+<li>início testes</li>
+<li>início pipeline de CI/CD (testes + entregável)
+-Equipe</li>
+<li>bom rodízio de pares</li>
+<li>consistência em mobs</li>
+<li>Planejamento maduro</li>
+<li>Velocity estável</li>
+<li>Métricas de produtividade equilibada</li>
+<li>Comunicação efetiva</li>
+</ul>
+</li>
+<li>Projeto
+<ul>
+<li>boa comunicação </li>
+<li>ter feito a primeira entrega</li>
+<li>Ambiente de homologação </li>
+</ul>
+</li>
+</ul>
+<h2 id="etapa-maduro"><a class="header" href="#etapa-maduro">Etapa Maduro</a></h2>
+<ul>
+<li>peso: 50%</li>
+<li>Código
+<ul>
+<li>tracking</li>
+<li>testes automatizados</li>
+<li>cobertura de testes</li>
+<li>pipeline de CI/CD (testes + entregável)</li>
+<li>artefatos para continuidade do projeto</li>
+</ul>
+</li>
+<li>Equipe
+<ul>
+<li>auto organização (&quot;coach invisível&quot;)</li>
+</ul>
+</li>
+<li>Projeto
+<ul>
+<li>demais entregas  (funcionalidades implementadas + manutenibilidade - como outra equipe pode continuar o projeto)</li>
+</ul>
+</li>
+</ul>
+<p>Obs.: Por manutenibilidade entende-se documentação sobre como ter um ambiente de desenvolvimento completo com os testes passando, ponteiros para pontos interessantes no código para novos contribuidores, e funcionalidades mais simples para estes implementarem enquanto conhecem o sistema.</p>
+<h1 id="aulas"><a class="header" href="#aulas">Aulas</a></h1>
+<div class="table-wrapper"><table><thead><tr><th style="text-align: center">Data</th><th style="text-align: center">Dia da Semana</th><th>Aula</th></tr></thead><tbody>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 0 - Aula 01 Planejamento sprint 0 Apresentação da disciplina Definição da dinâmica do curso Iniciar os treinamentos (git, ágil, documentos)</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 0 - Aula 2 Ciclo de projeto Apresentação dos Projetos Aula: Revisão de Git https://education.github.com/git-cheat-sheet-education.pdf</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 01 - Aula 01 Planejamento Sprint 1 Definição dos projetos Iniciar a definição de escopo do projeto (Roadmap, documento de visão, EAP, TAP) - Estudar documento de arquitetura</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 01 - Aula 02 Modelos de processo Métodos ágeis Planejamento ágil Material assincrono: https://youtu.be/OzTGRO7UGyY Material assincrono: https://youtu.be/WiRwKm9M5w8</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 02 - Aula 01 Planejamento Sprint 02  Scrum/Kanban/spotify Papéis, artefatos, rituais Documentos: planning sprint/review sprint/issues Revisar escopo projeto, iniciar documento de Arquitetura, escolha tecnológica. Treinamento papéis, Aula assincrona: https://youtu.be/NoGhC1LaaAE https://youtu.be/Q3MxVo9zdvU</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 02 - Aula 02 Requisitos ágeis (Épicos, features, História de usuário, task, bugs) Artefatos: EAP, Documento de Visão, Backlog de produto, Backlog da sprint, documento de requisitos funcionais/não funcionais Treinamento: uso do zenhub Slide da aula: https://docs.google.com/presentation/d/1P2-Odi4s-IZ2-OGN9Xqcb5ngqczZDBszqi4w8swawhE/edit?usp=sharing Material complementar (Design com olhar disruptivo): https://youtu.be/vlbB0xYRulQ</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 03 aula 01 Show me the code Grupos apresentarem documentação</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 03 - Aula 02 Arquitetura de software Components, Camadas, diagramas UMLs Documentos: documento de arquitetura, pipeline Material assíncrono: https://youtu.be/oCjZNteAvg0 https://youtu.be/RCnmxKZjIQM  Material de estudo: https://martinfowler.com/architecture/</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 04 - Aula 01 Controle de versão e desenvolvimento colaborativo Gitflow https://about.gitlab.com/images/press/git-cheat-sheet.pdf https://docs.gitlab.com/ee/topics/gitlab_flow.html</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 04 - Aula 02 Política de Branches - aprendendo o fluxo de colaboração - Pull request, merge request, revisão, papel mantenedor. https://github.com/fga-eps-mds/Qualifying-Software-Engineers-Undergraduates-in-DevOps/issues/24</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 05 - Aula 01 Papéis ágeis - Scrum master Produtividade, métricas ágeis (retrospectiva, burndown, velocity, quadro de conhecimento, health check), maturidade das práticas (comunicação nas issues/PRs, rituais time box, pareamento)</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 05 - aula 02 Controle de Versão e Integração Contínua Isolamento de ambiente Aula Assíncrona:  https://www.youtube.com/watch?v=-Vui7mdYkgk&amp;t=1920s https://www.youtube.com/watch?v=FBrUzyKviJw</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Início Sprint 06 Feriado</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 06 - aula 02 Entrega Release O que é release - Release Train Release notes - https://github.com/RocketChat/Rocket.Chat/releases/tag/4.5.0 Material de Apoio - https://www.thoughtworks.com/en-br/radar/techniques/release-train https://www.scaledagileframework.com/agile-release-train/</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Release 01 Vídeo por projeto (Máx 4 minutos) Vídeo por squad (Max 4 minutos)</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 06 - aula 02 Soft Skills - agilista - agile brazil Slides - https://drive.google.com/file/d/1L01HuKcFPueg6wPwlPdCHgPWN8MQe7nk/view?usp=sharing</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 07 - aula 01 Síncrona - 10 min Início Sprint</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 07 - aula 02 Extreme Programming (XP) O que é? Práticas (programação pareada, testes automatizados, testes unitários, integração) Slides: https://www.slideshare.net/hotpop/introduo-programao-extrema-extreme-programming-xp</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 08 -Aula 01 Início Sprint</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 08 - Aula 02 Testes Testes unitários Testes integração Teste aceitação Testes automatizados práticas de testes - TDD + pair programming Slides: https://www.slideshare.net/hotpop/introduo-qualidade-e-testes-geis-de-software Git colaborativo práticas de  Gerência de Configuração https://www.slideshare.net/hotpop/gerncia-de-configurao-gil Material complementar: Pytest - https://medium.com/assertqualityassurance/tutorial-de-pytest-para-iniciantes-cbdd81c6d761 https://github.com/pluralsight/intro-to-pytest</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 09 - Aula 01 Síncrona - Avisos Planning - trabalho dos grupos</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 09 - Aula 02 Qualidade de software Qualidade estática de software Clean Code/SOLID Code climate, LINT Slides:  Revisão de Codigo/Code Review: https://github.com/thamara/thamara/blob/7111f8907f2f2737902be4e60d7dc7f56e5d1bcc/presentations/2020-11-19%20Shes%20Tech%20-%20Code%20Review/Revisão%20de%20Código.pdf Dicas: https://github.com/MunGell/awesome-for-beginners</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 10 - Aula 01 Síncrona - Avisos Início Sprint</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 10 - Aula 02 Pipeline de Integração Stages Build automatizada Testes automatizados qualidade de software deploy</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 11 - Aula 01 Síncrona - Avisos Início Sprint</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Sprint 11 - aula 02 Aula: Licenças de software livre Copyright, patentes e aspectos legais Outros modelos de processo Cascata / RUP</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Sprint 12 - aula 01 Início Sprint</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Feriado</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td>Release 02 - MVP - Poc</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Retrospectiva Disciplina</td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td></td></tr>
+<tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Entrega notas final - revisão</td></tr>
+</tbody></table>
+</div>
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../1_Introdução/2022-2-primeiras-semanas.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../2-blog-posts/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../1_Introdução/2022-2-primeiras-semanas.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../2-blog-posts/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
