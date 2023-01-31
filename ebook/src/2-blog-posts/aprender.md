@@ -5,7 +5,26 @@
 
 
 						By Mylena Angélica- matrícula 211029497
+						
+Aprendizados para “aprender a aprender e aprender a fazer” consiste em uma metodologia chamada de “Experience Learning” e tem muita relação com o aprendizado de software. 
 
+**Quer saber o porquê?**
+ 
+O aprendizado é coisa séria, aprender sobre software, para um engenheiro que tem como principal ferramenta o próprio software, então, é mais que sério. 
+
+Para que você entenda um pouco mais sobre essa metodologia, vou contextualizar.
+
+A metodologia  tem como foco a aprendizagem como experiência. Veja só que bacana! Ela proporciona um ambiente no qual o aluno consegue controlar seu autodesenvolvimento para ir mais no nosso contexto, é centrada no usuário, ou seja, nós futuros engenheiros.
+
+Bem e o que isso tem a ver com a disciplina Métodos de Desenvolvimento de Software- MDS. 
+
+![duvida](https://media.tenor.com/OQBW68iKHDEAAAAC/saber-duvida.gif)
+
+Continue a ler o post e no final, responda a seguinte pergunta:
+
+**A metodologia Experience Learning  tem a ver com o que vamos conhecer ao longo deste post?**
+
+## Contextualizando 
 
 A disciplina de Métodos de Desenvolvimento de Software, do curso  Engenharia de Software, da Universidade de Brasília, ministrado pela Professora Doutora Carla Rocha, vai além do conhecimento teórico e ensina aos alunos a  lidar com situações que serão importantes para sua vida profissional. 
 Ela é considerada, pela comunidade acadêmica, essencial na grade horária do curso, pois apresenta conteúdos, dicas, metodologias, dentre outras, para quem quer se desenvolver na área de software.
@@ -148,6 +167,15 @@ E eu te garanto, depois da disciplina você irá ficar **apaixonado** por essa m
 E colaborar também é uma coisa importante na vida de um profissional, **juntos somos fortes!** O que seria de nós sem o Stack Overflow 🤣🤣
 
 #
+
+Chegou a tão esperada hora de responder ao questionamento que postei lá no início do post. 
+
+Vamos lá?
+
+Foi perguntado a você: **A metodologia Experience Learning  tem a ver com o que vamos conhecer ao longo deste post?**
+
+Se você respondeu que sim, parabéns! Você entendeu muito bem o que significa  “aprender a aprender e aprender a fazer”  e é exatamente a metodologia que a professora utiliza. Você deve ter percebido que ela é centrada no usuário e por isso, torna o processo de aprendizagem mais fluido e interessante. É bom aprender assim, não é mesmo?
+
 Gostaria de falar muito mais, sobre os descobrimentos e conhecimentos que foram oportunizados pela disciplina de MDS, mas como tempo é dinheiro 💸💸abordei apenas alguns alguns dos tópicos que mais me marcaram.
 
 Então, espero que, você, possa aproveitar meu post.
