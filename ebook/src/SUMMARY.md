@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [Scrum x Faculdade](./2-blog-posts/scrum_x_faculdade.md)
