@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [Pair Programming](./2-blog-posts/pair-programming.md)
