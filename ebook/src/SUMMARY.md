@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [Blog sobre Github Actions](.\src\post\teste_unitario_com_github_actions.md)
