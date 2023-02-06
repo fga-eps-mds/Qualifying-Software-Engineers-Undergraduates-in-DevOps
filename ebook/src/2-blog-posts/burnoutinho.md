@@ -46,4 +46,6 @@ Talvez isso já esteja longo demais para um aluno de exatas ler, e não está t�
 
 Não perca a cabeça. O semestre não está fácil para ninguém, nem para aquele professor carrasco que você tem certeza de que tem uma pedra no lugar do coração. Se não deu certo dessa vez, paciência. Muitas coisas não deram certo nesse semestre para mim, mas se eu fosse quantificar quantas coisas deram certo, com certeza superaria o número de fracassos. Mas sempre damos mais atenção ao que deu errado. Aquele 5 na prova não é um "não fez mais que sua obrigação". Parabéns por tê-la feito! Aquele MM numa matéria difícil não é algo a se envergonhar, é o famoso Meu Melhor. Tenha orgulho de você mesmo. Eu já tenho orgulho de você. 
 
+Não é fracasso dar um tempo de atividades que você não tem cabeça nenhuma pra resolver. O máximo que vai acontecer é que você não vai conseguir dedicar-se a elas da forma que gpstaria e vai se martirizar o resto da vida por não ter conseguido. Pare, respire, dê um tempo. Isso não significa desistir. 
+
 Se você precisar parar, pare. Se você puder continuar, continue, mas aprenda seus limites. Sempre há outra vez. 
