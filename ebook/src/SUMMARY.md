@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [Tá todo mundo exausto.](./2-blog-posts/burnoutinho.md)
