@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [Aprender a aprender](./2-blog-posts/aprender.md)
