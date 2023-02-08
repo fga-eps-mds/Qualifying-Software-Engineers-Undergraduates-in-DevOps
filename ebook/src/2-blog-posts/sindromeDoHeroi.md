@@ -17,7 +17,7 @@ Antes de falar sobre essa síndrome, você consegue identificar uma pessoa que s
  
  Observamos uma cultura de super-heróis nas empresas ou times quando, nas reuniões, os líderes elogiam pessoas e equipes que trabalham horas extras ou lidam com problemas urgentes como se fossem heróis. No entanto, dentro de uma equipe de trabalho ou de projeto, devemos valorizar aqueles que trabalham com inteligência, excelência e ajudam no desenvolvimento de outros e não incentivar comportamentos prejudiciais a saúde.
  
-## Bom, como identificar uma pessoa com a Síndrome do Herói ??
+## Como identificar uma pessoa com a Síndrome do Herói?
 
 #### 1) Vício ser reconhecido e ser o centro das atenções 
 
