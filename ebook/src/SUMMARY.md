@@ -7,3 +7,4 @@
 
 
 - [Blog Posts](./2-blog-posts/README.md)
+- [otimização na vida e trabalho](./2-blog-posts/otimização_na_vida_e_trabalho.md)
