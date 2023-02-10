@@ -2,7 +2,7 @@
 
 						   Diógenes Dantas Lélis Júnior - matrícula 190105267
 
-  #### Estrada Percorrida por mim no grup Ez-Docs (Squad7)
+  #### Estrada Percorrida por mim no grupo Ez-Docs (Squad7)
 
   Construir um projeto de software não compreende apenas passar noites e madrugadas escrevendo códigos no computador como se fosse um filme de Hollywood. O processo de desenvolvimento de software é uma jornada repleta de desafios e incertezas. Desde a concepção da ideia até a entrega final, os desenvolvedores enfrentam muitos obstáculos e precisam tomar decisões importantes ao longo do caminho. Todo esse percurso exige disciplina, esforço e aprendizado contínuo de técnicas e ferramentas. No entanto, o resultado final é sempre gratificante, pois os desenvolvedores têm a alegria de conceber uma solução que pode auxiliar muitas pessoas.
 
