@@ -1,4 +1,4 @@
-# Verdade - estudo técnico filosófico sobre o desenvolvimento de software
+# Verdade - _estudo técnico filosófico sobre o desenvolvimento de software_
 
 Feito por [_Bruno Ribeiro_](https://github.com/BrunoRiibeiro), membro do _[ez-docs](https://github.com/fga-eps-mds/2022-2-ez-docs) team_, em 2023.
 
