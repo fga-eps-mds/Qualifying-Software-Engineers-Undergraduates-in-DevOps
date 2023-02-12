@@ -210,10 +210,107 @@ A diferença entre merge e rebase é que o merge tenta posicionar as alteraçõe
 
 ## Recursos básicos
 
-É importante ressaltar que não vale a pena explicar algumas ferramentas básicas, que você descobre sem problemas tentando. 
+É importante ressaltar que não vale a pena aprofundar nosso tutorial em algumas ferramentas básicas do GitHub. Lembrem-se que o mesmo é uma ferramenta de interface gráfica, portanto muitas funcionalidades já são muito bem explicadas através de técnicas da UI e UX. Algumas funcionalidades que não serão aprofundadas são:
 
-Esses usos que não serão explicados são:
-- Como fazer cadastro/login (se for no GitHub CLI, eu já expliquei.)
-- Como criar um repositório público ou privado.
-- Editar (as permissões e os arquivos), compartilhar (se for público, só compartilha o link) e deleter repositórios(é literalmente só ir nas configurações do repositório e procurar)  
-- Como criar um perfil básico no GitHub, porque é fácil e para perfis trabalhados, há vários tutoriais melhores por aí.
+<table>
+    <tr>
+        <th>Funcionalidade</th>
+        <th>Como usar?</th>
+    </tr>
+    <tr>
+        <td>Cadastro/Login</td>
+        <td>Clique nos botões "Sign in" ou "Sign up" no menu principal do GitHub e siga as intruções lá contidas. Se for para autenticar-se no GitHub CLI, instale-o e digite <i>gh auth login</i></td>
+    </tr>
+    <tr>
+        <td>Criar um perfil decente/interativo/profissional/bonito</td>
+        <td>O seu perfil possui um ReadMe.md, lá você pode editar seu perfil em geral. Mas para fazer um perfil elaborado, é melhor procurar tutoriais específicos para isso.</td>
+    </tr>
+    <tr>
+        <td>Criar repositório público ou privado</td>
+        <td>Aperte no botão de criar repositório e escolha qual tipo de repositório você quer.</td>
+    </tr>
+    <tr>
+        <td>Editar as permissões, integrantes, visibilidade do repositório ou apagá-lo</td>
+        <td>Ao ser administrador de um repositório, vá na aba <i>Settings</i> e você verá todas as opções.</td>
+    </tr>
+    <tr>
+        <td>Editar arquivos dos repositórios, criar novos arquivos ou enviar um arquivo novo para o repositório</td>
+        <td>Há botões próprios para todas essas funções, basta achá-los. Formas alternativas são descritas no tutorial de Git</td>
+    </tr>
+</table>
+
+## Repositórios
+
+Existem alguns artefatos altamente recomendados para ser ter em qualquer aplicação, sendo esses:
+- .gitignore;
+- Licença; e
+- ReadMe.md
+
+### .gitignore
+
+Arquivos .gitignore são únicos em cada repositório e tem o importante dever de instruir o Git a ignorar a adição de novas alterações. Arquivos assim são importantes no em qualquer projeto Git ou GitHub para impedir o desenvolvedor de comparilhar arquivos temporários, cache, configurações próprias do seu sistema de desenvolvimento e outros artefatos que não deveriam ser incluídos.
+
+O GitHub possui alguns modelos de .gitignore para muitas linguagem de programação e framework, mas saiba que é extremamente fácil construir um .gitignore. Você só cria um arquivo com este nome e escreve o caminho e nome de um arquivo a ser ignorado. Um arquivo por linha. Exemplo:
+
+    .__pycache__/
+    .vscode/
+    a.out
+    testes/desabafo.txt
+
+Claro que há .gitignore mais elaborado, mas é o bastante por agora.
+
+### Licença
+
+No caso de projetos reais, a licença é extremamente importante para delimitar as permissões que as outras pessoas têm sobre o seu produtos. Como o GitHub foca bastante em projetos Open Source, muitas das licenças oferecidas por padrão são dessa área, sendo uma etapa importante desses projetos. Inclusive, projetos que não pretendem ser Open Source acabam por possuir muitas limitações no GitHub.
+
+Uma comparação das licenças disponíveis é bem descrita em muitos locais da internet, inclusive no próprio GitHub.
+
+Caso tenha dúvidas em que licença usar para o seu projeto, visite o [site recomendado pelo próprio GitHub](https://choosealicense.com/).
+
+### Read Me
+
+A capa de qualquer repositórios no GitHub é o ReadMe. Sendo um arquivo em formato Markdown (.md), é extremamente importante que o seu repositório possua um ReadMe.md elaborado, seja seu projeto algo privado ou público. Um ReadMe bem escrito costuma ter alguns elementos em comum:
+
+- **Uma descrição breve do que seria o projeto**, qual sua finalidade e objetivo. Alguns possuem até uma ilustração da logo do projeto.
+- **Instruções de instalação e acesso do produto**, principalmente se você planeja que alguém acesse seus conteúdos. Essa parte em específico pode ser bem detalhada inclusive.
+- **Tecnologias e técnicas usadas** são importantes de serem adicionadas, pois dá uma dimensão da pilha de tecnologias que eles precisam ter conhecimento para colaborar com o projeto.
+- Instruções de **Como contribuir** com o projeto.
+
+Você também pode inserir mais o que quiser no Readme, não sinta-se preso a esse padrão. O importante é que qualquer tipo de usuário entenda o que fazer a respeito do seu projeto.
+
+**AVISO: o Readme, assim como o repositório, normalmente são vistos por desenvolvedores e possíveis colaboradores futuros. Sempre tenha em mente o público que acessa o GitHUb. Visto isso, um Readme não é muito adequado para uma capa de venda do produto, algo assim seria melhor feito em páginas web, como através do GitHub Pages.**
+
+## Issues
+
+*Issues* é uma aba que todo repositório GitHub possui. Essa aba pode ser personalizada para servir a diversos propósitos, todos focados na comunicação dos colaboradores ou equipe.
+
+Issues normalmente são basicamente "questões" levantadas no projeto. Elas possuem dois estados, aberta e fechada.
+
+As issues oferecem Templates, sendo esta uma métrica para julgar se o seu projeto está bem estruturado para a recepção da comunidade Open Source. Os templates de issue que você adicinou ou escreveu para o repositório ficam disponíveis para qualquer usuário usar ao tentar adicionar uma issue.
+
+Nesses Templates, podemos ver alguns usos das Issues, sendo eles:
+
+### Reportar bugs
+
+Ao reportar um bug, é interessante que o usuário explique o bug, mostre como replicá-lo (caso possível) e insira algumas informações do seu sistema que ele considera relevante para a situação. O sistema operacional usado e a versão do software disponibilizado em que houve o bug são alguns exemplos de informações normalmente relevantes para um desenvolvedor. Trate de usar um template que instrua muito bem o usuário a escrever essas informações.
+
+### Registrar recursos a serem desenvolvidos
+Funcionalidades são sugeridas por alguém da equipe e muitas vezes implementada por algum outro contribuidor, portanto é essencial que o item esteja bem descrito. Um template simples de adição funcionalidades costuma conter:
+- Descrição do recurso.
+- Tarefas e etapas que você considera importante para a adição do componente. Marque elas num formato de CheckList, pois as Issues reconhecem e rastreiam quantas tarefas já foram feitas.
+- Critérios de Aprovação, em que se detalha se o recurso precisa passar por alguma ferramenta de teste e quais requisitos de qualidade o produto deve ter.
+
+É comum que Issues de recursos sejam criadas no repositório sem que ninguém tenha se proposto a fazer ainda. Até que um colaborador comenta na issue se propondo a trabalhar na funcionalidade, descreve a solução que ele pensou e por fim tenta implementar a funcionalidade ao pedir um pedido de mesclagem (Pull Request)
+
+### Propor ideias de recursos
+
+Assim como há uma issue para relatar bugs, qualquer pessoa pode sugerir funcionaldades ao projeto. Disso surgem ideias vagas e algumas propostas muito bem pensadas e detalhadas. A proposta de funcionalidades também é adequada para ser feita através do fórum criado pela aba Discussions, depende de qual ambiente a equipe do projeto prefere.
+
+### Registrar decisões da equipe
+É importante registrar a tomada de decisões importantes sobre o projeto em algum lugar e a aba Issues acaba sendo um lugar adequado para isso. A aba Discussions também é adequada para esta função.
+
+---
+
+O GitHub também oferece o uso de ***tags*** para classificar as issues. É sugerido que você faça tags para as diferentes áreas de desenvolvimento do seu projetos, tecnologias utilizadas, níveis de dificuldade da issue e níveis de urgência.
+
+As ***Milestones*** são outra forma de personalizar
