@@ -1,19 +1,47 @@
-# Git
+# Introdução
 
-Git é uma ferramenta de controle de versionamento. Muitos equipes de software (e até em outras áreas) o usa a fim de gerar uma organização melhor de seus projetos, principalmente quando várias pessoas estão trabalhando num mesmo arquivo.
+Git e GitHub são duas ferramentas complementares no mundo de desenvolvimento de software, mas que acabam gerando muitas dúvidas a novatos e desenvolvedores iniciantes. Eu mesmo usava GitHub nos meus primeiros meses de desenvolvimento jurando que já podia me dizer profissional no Git. Baita erro.Afinal, qual a diferença entre eles? É essa dúvida que quero sanar aqui, mas não só com uma explicação teórica dizendo que Git é a ferramenta e GitHub só usa ele em formato de site. Quero mostrar-lhes a diferença na prática, mostrando os primeiros passos com o Git isoladamente, sua integração com o GitHub e como o GitHub não é só uma Hub comum do Git, mas todo um centro de trabalho online.
 
-## Introdução ao Git
+Espero que aproveitem o que escrevi e de verdade, não leia isso de uma vez, muito menos na ordem. Use isso com um complemento aos seus estudos com o Git, um guia. Veja as partes que lhe interessam por agora, treine-as e depois vá para o próximo tópico que precisa. Além disso, saiba que a melhor fonte de informação sobre tanto o Git quanto o GitHub sempre será suas próprias documentações, isso aqui é só uma simplicação feita para não deixar os iniciantes perdidos.
 
-O Git cria em sua máquina local um *repositório*, estrutura esta que serve para armazenar alterações. De forma mais detalhada, o Git cri uma pasta *.git* no computador. Todo arquivo e pasta no mesmo no mesmo local do *.git* ou com seus parentes superiores neste local irão estar dentro de um repositório, que irá registrar as alterações feitas no local, sejam elas criações de documentos, apagamento de arquivos, edição de textos, etc.
 
-![Exemplo de Repositório Git]()
+# Índice
+- [Introdução ao Git](#introdução-ao-git)
+    - [O que é o Git?](#o-que-é-o-git)
+- [Introdução ao GitHub](#introdução-ao-github)
+    - [Funcionalidades do GitHub](#funcionalidades-do-github)
+- [Usando Git](#usando-o-git)
+    - [Apresentando-se ao Git](#apresentando-se-ao-git)
+    - [Integrando seu Git e GitHub](#integrando-seu-git-e-github)
+    - [Acesso a um Repositório](#acesso-a-um-repositório)
+    - [Mudança/Criação de Branches](#mudançacriação-de-branches)
+    - [Adição de Mudanças no Repositório](#adição-de-mudanças-no-repositório)
+    - [Atualizar um Repositório Remoto com as Alterações de um Repositório Local](#atualizar-um-repositório-remoto-com-as-alterações-de-um-repositório-local)
+    - [Exportanto/Mesclando Alterações entre Branches](#exportandomesclando-alterações-entre-branches)
+    - [Resolvendo Conflitos de Versões](#resolvendo-conflitos-de-versões)
+- [Usando GitHub](#usando-o-github)
+    - [Recursos Básicos](#recursos-básicos)
+    - [Repositórios](#repositórios)
+    - [Organização e Comunicação com Issues](#organização-e-comunicação-com-issues)
+    - [Solicitando alterações com Pull Requests](#solicitando-alterações-com-pull-requests)
+    - [Wiki, Projects e Discussions](#wiki-projects-e-discussions)
+    - [Estatísticas com Insights](#estatísticas-com-insights)
+    - [Automação com GitHub Actions](#automação-com-github-actions)
+- [Conclusão](#conclusão)
+<br><br><br>
 
-Conceitos Importantes:
-- Repositórios (locais):
-- Alterações:
-- Pasta *.git*:
+# Introdução ao Git
 
-## Introdução ao GitHub
+Git é uma ferramenta de controle de versionamento. Muitas equipes de software (e até de outras áreas) o usa a fim de gerar uma organização melhor de seus projetos, principalmente quando várias pessoas estão trabalhando num mesmo arquivo.
+
+## O que é o Git?
+
+O Git cria em sua máquina local um *repositório*, estrutura esta que serve para armazenar alterações. De forma mais detalhada, o Git cria uma pasta *.git* no computador. A pasta que carrega a pasta .git irá se tornar um repositório, que irá registrar as alterações feitas no local, sejam elas criações de documentos, apagamento de arquivos, edição de textos, etc.
+
+# Introdução ao GitHub
+
+<a href="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"><img width=40% src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub"> </a>
+
 
 Nada diferente de quaisquer outros *Hubs de ferramentas*, o GitHub é um centro online de repositórios Git. De forma mais detalhada, você acessa o site do GitHub, cria a sua conta e pode criar e adicionar repositórios Git de forma remota, fora de seu computador, através de um link que pode ser acessado por outras pessoas mundo afora. Ainda que sejam realmente repositórios Git, vamos denominar aqui todo repositório no GitHub de **repositório remoto** para facilitar a compreensão.
 
@@ -23,28 +51,26 @@ O GitHub entretanto tornou-se tão famoso que estendeu suas funcionalidades de s
 
 Boa parte das funcionalidades do GitHub se voltam a projetos de Código Aberto (Open Source), limitando algumas das funcionalidades para projetos que pretendem ter seus códigos privados.
 
-- Princpais:
-    - Compartilhar, criar, editar e excluir repositórios Git remotamente ao mundo todo.
-    - Cria uma interface simples de manipulação de repositórios Git.
-    - Possibilitar a disponibilização dos seus repositórios para todo mundo (repositórios públicos) ou somente para pessoas escolhidas a dedo (repositórios privados).
-
+- Principais:
+  - Compartilhar, criar, editar e excluir repositórios Git remotamente ao mundo todo.
+  - Cria uma interface simples de manipulação de repositórios Git.
+  - Possibilitar a disponibilização dos seus repositórios para todo mundo (repositórios públicos) ou somente para pessoas escolhidas a dedo (repositórios privados).
 
 - Desenvolvimento direto de Software:
-    - Editor de código simples.
-    - IDE com o recente GitHub Copilot.
-    - A aba Wiki de todo repositório, que permite aos colaboradores documentarem o projeto no formato de uma página Wiki.
+  - Editor de código simples.
+  - IDE com o recente GitHub Copilot.
+  - A aba Wiki de todo repositório, que permite aos colaboradores documentarem o projeto no formato de uma página Wiki.
 
 - Comunicação:
-    - A aba Discussions de todo repositório, que permite ao dono abrir um Fórum integrado ao projeto.
-    - A aba Issues de todo repositório, que permite aos colaboradores levantar questões, problemas e sugestões
-    - A aba Pull Requests que possibilita aos colaboradores proporem uma nova versão no repositório, com as alterações já feitas.
-
+  - A aba Discussions de todo repositório, que permite ao dono abrir um Fórum integrado ao projeto.
+  - A aba Issues de todo repositório, que permite aos colaboradores levantar questões, problemas e sugestões
+  - A aba Pull Requests que possibilita aos colaboradores proporem uma nova versão no repositório, com as alterações já feitas.
 
 - Deploy:
-    - Possibilidade de criar *Releases* do seu projeto, salvando todas as alterações até aquele momento num arquivo comprimido.
-    - Integração Contínua através de ferramentas disponibilizadas e implementadas via GitHub Actions.
-    - Disponibilização de Lints e ferramentas de teste também através do Git Hub Action.
-    - Criação de um site estático de apresentação do seu produto através do GitHub Pages.
+  - Possibilidade de criar *Releases* do seu projeto, salvando todas as alterações até aquele momento num arquivo comprimido.
+  - Integração Contínua através de ferramentas disponibilizadas e implementadas via GitHub Actions.
+  - Disponibilização de Lints e ferramentas de teste também através do Git Hub Action.
+  - Criação de um site estático de apresentação do seu produto através do GitHub Pages.
 
 Sem contar diversas outras funcionalidades disponibilidas pelo próprio GitHub ou até mesmo através de extensões de terceiros. Alguns recursos de terceiros famosos são o ZenHub, GitLab e o Code Climate.
 
@@ -93,9 +119,9 @@ git clone <url>
 ```
 4. Espere o loading e pronto, vocẽ terá feito uma **cópia** local o seu repositório remoto.
 
-![Repositório Local e Remoto]()
+<a href="https://www.mmfava.com/talk/2021-08-14-git-github-rstudio/images/fig/repo_remoto.jpg"><img width=100% src="https://www.mmfava.com/talk/2021-08-14-git-github-rstudio/images/fig/repo_remoto.jpg" alt="Repositório local vs Repositório remoto"> </a>
 
-## Mudança/Criação e Branches
+## Mudança/Criação de Branches
 
 Uma *branch* é uma ramificação do seu repositório. Vocẽ pode colocar uma série de alterações que você não tem certeza se irá realmente adicionar no projeto numa branch alternativa por exemplo. Existem várias utilidades para branches, portanto saber usá-las é imprescindível.
 
@@ -138,9 +164,15 @@ Onde *< mensagem>* será trocada por um texto que descreva que mudanças foram a
 Por fim, para ver se suas alterações foram submetidas, use o comando:
 
     git status
+
 Tal comando permite com que você veja uma série de informações sobre a branch atual em que você está, incluindo as alterações pendentes e o estado delas. Alterações submetidas não estarão mais pendentes.
 
-**AVISO: É importante ressaltar que TODAS as alterações e submissões são exclusivas da branch em que você está. Se você submeter alterações na branch X, a branch Y continuará do inalterada. Para interagir mudanças feitas numa branch com a outra, veja mais na [sessão Merge](#merge)**
+
+**AVISO: É importante ressaltar que TODAS as alterações e submissões são exclusivas da branch em que você está. Se você submeter alterações na branch X, a branch Y continuará do inalterada. Para interagir mudanças feitas numa branch com a outra, veja mais na [sessão Merge](#exportandomesclando-alterações-entre-branches)**
+
+
+<a href="https://uidaholib.github.io/get-git/images/workflow.png"><img width=100% src="https://uidaholib.github.io/get-git/images/workflow.png" alt="Transições do alterações entre locais"> </a>
+
 
 ## Atualizar um repositório remoto com as alterações de um repositório local.
 
@@ -182,7 +214,7 @@ O Git faz automaticamente um *git merge* quando você usa um *git pull*.
 
 O GitHub também usa o git merge com uma ferramenta gráfica em seu site chamada *Pull Request*. Para iniciantes, o Pull Request é muito mais intuitivo e controlado, portanto recomendo sua utilização no lugar do git merge em boa parte das situações básicas.
 
-CURIOSIDADE: o comando *git pull* é na verdade o mesmo que chamar um *git fetch*, que importa as alterações de outro repositório, e logo depois um *git merge*, que mescla as alterações importadas no repositório. O merge pode ser usado em operações entre repositórios porque elas nada mais são do que operações entre branches de diferentes repositórios.
+    CURIOSIDADE: o comando git pull é na verdade o mesmo que chamar um git fetch, que importa as alterações de outro repositório, e logo depois um git merge, que mescla as alterações importadas no repositório. O merge pode ser usado em operações entre repositórios porque elas nada mais são do que operações entre branches de diferentes repositórios.
 
 ## Resolvendo conflitos de versões
 
@@ -204,7 +236,7 @@ Mas a estratégia mais comum para o caso é realmente um:
 
 A diferença entre merge e rebase é que o merge tenta posicionar as alterações da branch a ser mesclada relacionando a última alteração ao final da branch principal. Já um rebase vai pegar as alterações da ramificação a ser mesclada, copiá-las e tentar aplicá-las no final da branch atual. Como um rebase copia e reaplica as alterações, ela normalmente resolve problemas que o merge não resolve, mas acaba reestruturando o histórico de mudanças como efeito colateral. Por isso tome bastante cuidado ao user o rebase em trabalhos em grupos com pessoas que pouco conhece, principalmente em projetos abertos, visto que a colaboração muitas vezes é contabilizada pelo histórico.
 
-![Merge vs Rebase](data:image/png;base64,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)
+<a href="https://miro.medium.com/max/868/1*g48HJkKNsZwNlWEM6Z82ig.jpeg"><img src="https://miro.medium.com/max/868/1*g48HJkKNsZwNlWEM6Z82ig.jpeg" alt="Merge vs Rebase"> </a>
 
 # Usando o GitHub
 
@@ -278,13 +310,16 @@ A capa de qualquer repositórios no GitHub é o ReadMe. Sendo um arquivo em form
 
 Você também pode inserir mais o que quiser no Readme, não sinta-se preso a esse padrão. O importante é que qualquer tipo de usuário entenda o que fazer a respeito do seu projeto.
 
-**AVISO: o Readme, assim como o repositório, normalmente são vistos por desenvolvedores e possíveis colaboradores futuros. Sempre tenha em mente o público que acessa o GitHUb. Visto isso, um Readme não é muito adequado para uma capa de venda do produto, algo assim seria melhor feito em páginas web, como através do GitHub Pages.**
+    AVISO: o Readme, assim como o repositório, normalmente são vistos por desenvolvedores e possíveis colaboradores futuros. Sempre tenha em mente o público que acessa o GitHUb. Visto isso, um Readme não é muito adequado para uma capa de venda do produto, algo assim seria melhor feito em páginas web, como através do GitHub Pages.
 
-## Issues
+## Organização e Comunicação com Issues
 
-*Issues* é uma aba que todo repositório GitHub possui. Essa aba pode ser personalizada para servir a diversos propósitos, todos focados na comunicação dos colaboradores ou equipe.
+A aba *Issues* está presente em qualquer repositório GitHub. Ela pode ser personalizada para servir a diversos propósitos, todos focados na comunicação dos colaboradores ou equipe. Em outras palavras, é o primeiro recurso deste tutorial com influências da cultura DevOps. O GitHub possui várias ferramentas DevOps, já que muitos das pequenas equipes de código aberto possuem uma maior produtividade e integração ao adotar essa cultura.
 
-Issues normalmente são basicamente "questões" levantadas no projeto. Elas possuem dois estados, aberta e fechada.
+Issues são basicamente "questões" levantadas no projeto. Elas possuem dois estados: aberta e fechada.
+
+<a href="https://i0.wp.com/user-images.githubusercontent.com/22751162/120507746-b259cf00-c38c-11eb-8d2d-942a8c756ec8.png?ssl=1"><img src="https://i0.wp.com/user-images.githubusercontent.com/22751162/120507746-b259cf00-c38c-11eb-8d2d-942a8c756ec8.png?ssl=1" alt="Issues no GitHub"> </a>
+
 
 As issues oferecem Templates, sendo esta uma métrica para julgar se o seu projeto está bem estruturado para a recepção da comunidade Open Source. Os templates de issue que você adicinou ou escreveu para o repositório ficam disponíveis para qualquer usuário usar ao tentar adicionar uma issue.
 
@@ -292,7 +327,9 @@ Nesses Templates, podemos ver alguns usos das Issues, sendo eles:
 
 ### Reportar bugs
 
-Ao reportar um bug, é interessante que o usuário explique o bug, mostre como replicá-lo (caso possível) e insira algumas informações do seu sistema que ele considera relevante para a situação. O sistema operacional usado e a versão do software disponibilizado em que houve o bug são alguns exemplos de informações normalmente relevantes para um desenvolvedor. Trate de usar um template que instrua muito bem o usuário a escrever essas informações.
+Todo produto de software possui bugs e é importante que os usuários tenham alguma forma de denunciá-los. Ter conhecimento de quais bugs aflingem seu produto é essencial para a cultura DevOps, pois possibilita que o time coloque a correção na sua lista de tarefas para um conserto ágil com os colaboradores.
+
+Ao reportar um bug, é interessante que o usuário explique o bug, mostre como replicá-lo (caso possível) e insira algumas informações do sistema utilizado que ele considera relevante para a situação. O sistema operacional usado e a versão do software disponibilizado em que houve o bug são alguns exemplos de informações normalmente relevantes para um desenvolvedor. Trate de usar um template que instrua muito bem o usuário a escrever essas informações.
 
 ### Registrar recursos a serem desenvolvidos
 Funcionalidades são sugeridas por alguém da equipe e muitas vezes implementada por algum outro contribuidor, portanto é essencial que o item esteja bem descrito. Um template simples de adição funcionalidades costuma conter:
@@ -300,7 +337,7 @@ Funcionalidades são sugeridas por alguém da equipe e muitas vezes implementada
 - Tarefas e etapas que você considera importante para a adição do componente. Marque elas num formato de CheckList, pois as Issues reconhecem e rastreiam quantas tarefas já foram feitas.
 - Critérios de Aprovação, em que se detalha se o recurso precisa passar por alguma ferramenta de teste e quais requisitos de qualidade o produto deve ter.
 
-É comum que Issues de recursos sejam criadas no repositório sem que ninguém tenha se proposto a fazer ainda. Até que um colaborador comenta na issue se propondo a trabalhar na funcionalidade, descreve a solução que ele pensou e por fim tenta implementar a funcionalidade ao pedir um pedido de mesclagem (Pull Request)
+É comum que Issues de "recursos a implementar" sejam criadas no repositório sem que ninguém tenha se proposto a fazer ainda. Até que um colaborador comenta na issue se propondo a trabalhar na funcionalidade, descreve a solução que ele pensou e por fim tenta implementar a funcionalidade ao pedir um pedido de mesclagem (Pull Request)
 
 ### Propor ideias de recursos
 
@@ -309,8 +346,141 @@ Assim como há uma issue para relatar bugs, qualquer pessoa pode sugerir funcion
 ### Registrar decisões da equipe
 É importante registrar a tomada de decisões importantes sobre o projeto em algum lugar e a aba Issues acaba sendo um lugar adequado para isso. A aba Discussions também é adequada para esta função.
 
----
+<br><br>
 
-O GitHub também oferece o uso de ***tags*** para classificar as issues. É sugerido que você faça tags para as diferentes áreas de desenvolvimento do seu projetos, tecnologias utilizadas, níveis de dificuldade da issue e níveis de urgência.
+O GitHub também oferece o uso de ***tags*** para classificar as issues. É sugerido que você faça tags para as diferentes áreas de desenvolvimento do seu projetos, tecnologias utilizadas, níveis de dificuldade da issue e níveis de urgência. Saiba que você pode atribuir quantas tags quiser em uma issue.
 
-As ***Milestones*** são outra forma de personalizar
+As ***Milestones*** são outra forma de personalizar sua experiência com issues. Cada Milestone possui um prazo de término e uma barra de progresso que sobe a medida que você termina issues marcadas com a Milestone. É um recurso simples que adiciona um tom de responsabilidade e planejamento ao GitHub.
+
+Há também várias extensões que podem ser adicionadas ao GitHub para adicionar mais recursos às issues. Uma extensão famosa é o [ZenHub](https://www.zenhub.com/), ferramenta capaz de adicionar estimativas de dificuldade, dependências e épicos para cada issue, além de gerar mais análises de dados que o GitHub não gera.
+
+## Solicitando alterações com Pull Requests
+
+De forma bastante rasa, Pull Requests são equivalentes ao comando *git merge*, só que representado numa interface gŕafica. Você cria uma nova branch ou fork, escreve o código, adiciona e confirma as alterações feitas e por fim insere sua atualização na branch principal.
+
+Mas a verdade é que o Pull Request é muito mais que um simples comando de mesclagem, ele segue a filosofia DevOps e o método XP(Extreme Programming), implementando alguns elementos que ambas as influências acham essenciais no desenvolvimento de software.
+
+Uma Pull Request precisa ser revisada e aceita por outros colaboradores para de fato ser aplicada. Esses e mais alguns recursos garantem um bom trabalho em equipe para projetos de código aberto, cujas mudanças podem ser **propostas** por qualquer um. Pull Requests não aceitas são fechadas sem mesclagem nenhuma e normalmente carregam um feedback do revisor descrevendo qual o problema das alterações.
+
+<a href="https://miro.medium.com/max/1400/0*K8P35YttgYS3TrU1"><img src="https://miro.medium.com/max/1400/0*K8P35YttgYS3TrU1" alt="Pull Request"> </a>
+
+Normalmente Pull Requests também possuem um template simples para que os colaboradores descrevam o que foi feito.
+
+### Recursos
+- Pareamento/Revisão: o pareamento é uma ferramenta importada do método XP. Acredita-se que a qualidade do código aumenta quando fazemos sabendo que alguém vai ler e revisar. Por isso uma das bases do XP é que todo código deve ter uma revisão adequada e troca de feedback entre os envolvidos. O GitHub incorpora essa prática ao exigir um corretor e permitir que não só ele veja as modificações feitas, como também possa comentar na própria Pull Request qual seu julgamento sobre as mudanças feitas.
+
+- Revisão alterações: você têm acesso a todos os *commits* que seriam adicionados caso a Pull Request fosse aceita.
+
+- Ver alterações nos próprios arquivos: é uma versão mais detalhada da revisão de alterações, não só mostrando os commits que seriam adicionados, como também o que cada um desses mudou no código em si, linha por linha.
+
+- Checagem(veja a aba [Actions](#GitHubActions)): para evitar que mesclagens mal revisadas quebrem o funcionamento de um código, desenvolvedores adicionam testes ao GitHub. Ou seja, toda Pull Request deve passar por todos os testes ativos de um repositório para serem aceitas, assim como conflitos com mesclagens pelo Git. Um revisor pode ver quais testes não deram certo e buscar mais sobre para dar um feedback completo ao contribuidor.
+
+<br>
+
+Pull Requests também podem receber mais recursos com extensões, como a do ZenHub. Esta adiciona dependências, issues relacionadas, estimativas de dificuldade, épicos, sprints e muito mais.
+
+## Wiki, Projects e Discussions
+
+A aba **Wiki** é um lugar onde você pode adicionar uma página Wiki ao seu repositório. Escrita em Markdown, com a capacidade de receber centenas de páginas e um menu lateral que as organiza, a aba é ótimo lugar para guardar a documentação do seu site. Muitas pessoas entretanto preferem usar o GitHub Pages, com ferramentas como o Jekkins e MkDocs, dando um incremento nos design e funcionalidade da sua documentação.
+
+A aba **Projects** serve como uma forma de organizar sua equipe através das diversas issues que normalmente um projeto recebe.
+
+É difícil ver prazos, quais issues já estão sendo feitas por alguém e quais são mais urgentes na aba Issues. Até porque, a aba não é feita para ver informações das issues, mas sim listá-las. A fim de facilitar a organização dos desenvolvedores, a aba Projects gera testruturas que permitem uma fácil visualização e classificação das issues. Você pode criar uma tabela com prioridades, datas de entrega, envolvidos, tudo em colunas que podem ser visualizadas de uma vez só. Também pode criar um Kanban, clássica ferramenta de gerenciamento de equipe sobre atividades, com os cartões sendo as issues e cada coluna um estado da Issue.
+
+<a href="https://github.githubassets.com/images/modules/site/issues/issue-custom-fields-reduced-motion.jpg"><img src="https://github.githubassets.com/images/modules/site/issues/issue-custom-fields-reduced-motion.jpg" alt="Tabela de Project no GitHub"> </a>
+
+<a href="https://github.githubassets.com/images/modules/site/issues/illo/issues-board.png"><img src="https://github.githubassets.com/images/modules/site/issues/illo/issues-board.png" alt="Kanban's Project no GitHub"> </a>
+
+Estabelecido como uma ferramenta de fórum para a comunidade do seu repositório, a aba **Discussions** tem grande utilidade para projetos Open Source.
+
+Para quem não conhece, fórums são ambientes de conversa, parecidos com chats, mas separados por tópicos/discussão. Cada tópico é uma conversa diferente iniciada por uma pergunta, relato, afirmação, sugestão. Outras pessoas podem comentar sobre o tópico, reagir a elas (com emojis) ou destacá-las apertando numa seta. No GitHub, os tópicos/discussões são separadas em categorias, ajudando contribuídores que querem achar discussões específicas.
+
+A descrição do funcionamento da aba Discussions é um pouco similar às issues, mas a grande diferença é que o foco nas Discussions é justamente a discussão entre as pessoas, enquanto as Issues focam em relatar problemas e registrar novas funcionalidades. Por isso as Discussions muitas vezes são usadas para sugerir funcionalidades ao invés da aba Issues.
+
+<a href="https://www.freecodecamp.org/news/content/images/2022/05/screely-1652334880222-1.png"><img src="https://www.freecodecamp.org/news/content/images/2022/05/screely-1652334880222-1.png" alt="GitHub Discussions"> </a>
+
+As três ferramentas são integradas com o GitHub e fornecem uma centralização de tudo relacionado ao seu projeto em um único lugar. Entretanto, como todas essas ferramentas não são o foco do GitHub, elas acabam sendo básicas em relação ao serviço que oferecem. Outras ferramentas e extensões especializadas nesses serviços possuem funcionalidades mais avançadas e flexíveis. Se é melhor usar um software externo ou não, depende do que for mais adequado ao seu projeto.
+
+## Estatísticas com Insights
+
+<a href="https://cdn.ttgtmedia.com/rms/editorial/012119_TSS_GitHub-contributors-insight_mobile.png"><img src="https://cdn.ttgtmedia.com/rms/editorial/012119_TSS_GitHub-contributors-insight_mobile.png"> </a>
+
+
+A aba Insights é responsável por demonstrar diversos *insights* do projeto, ou seja, diversas estatísticas com base nas atividades no repositório. É uma aba essencial principalmente para os gestores do projeto e para a criação de projetos Open Source.
+
+A aba Insights possui dez categorias, sendo a maioria delas somente disponível se o seu repositório for público. As categorias são bem auto explicativas, então sugiro que você mesmo vá lá, explore e se divirta vendo as diferentes informações e gráficos apresentados.
+
+Entretanto se você é novo em projetos Open Source, há uma categoria que é muito interessante de conferir, a *Community Standards*. Ela lista alguns pré requisitos para que o seu projeto Open Source tenha qualidade e atraia contribuídores no GitHub. Há várias sugestões ali de atividades que vimos e não vimos durante o tutorial, mas garanto que até as sugestões que parecem mais assustadoras e trabalhosas são bem simples graças a ajuda do GitHub. 
+
+## Automação com GitHub Actions
+
+O GitHub Actions é mais uma ferramenta focada em oferecer métodos mais ágeis de se desenvolver softwares em seu site. Com o foco em criar um ambiente de *integração contínua* (CI) e *entrega contínua* (CD), vindos da cultura DevOps, o GitHub Actions permite às equipes criem fluxos de trabalho nas alterações enviadas ao repositório.
+
+Um fluxo de trabalho (ou *workflow*) seria uma série de tarefas que devem ser seguidas ao realizar alguma atividade. Por exemplo: em empresas, toda alteração feita no código de um software pré existente deve sofrer uma série de testes para garantir que a aplicação não fique fora do ar. É possível aplicar fluxos de trabalho em quaisquer eventos que ocorram em seu repositório, sejam as alterações propostas em Pull Requests ou descrições de problemas nas issues. 
+
+
+
+Cada etapa de um fluxo de trabalho é descrita num único arquivo *.yml*, sendo que todas podem conter comandos para serem executados no terminal. O uso de comandos no terminal abre a possibilidade ao uso de softwares CLI e chamada de scripts, que por sua vez possibilitam a execução de código em quaisquer linguagens. Com uma variedade de personalização tão grande, essa é sem dúvidas uma das ferramentas mais importantes do GitHub.
+
+<a href="https://docs.github.com/assets/cb-63715/images/help/images/workflow-graph.png"><img src="https://docs.github.com/assets/cb-63715/images/help/images/workflow-graph.png"> </a>
+
+### Como criar fluxos de trabalho?
+
+Para criar um fluxo de trabalho:
+
+1. Selecione a aba Actions.
+2. Escolha um modelo de workflow que melhor represente o que você pretende fazer. O GitHub possui uma grande variedade deles, mas caso não um que goste, faça um do zero clicando no respectivo link no site.
+3. Ao clicar, ele dará a opção de você editar o fluxo. Caso esteja satisfeito, aplique sua modificação.
+
+Perceba que é bem fácil de entender o que cada parte do código *.yml* é:
+
+- *name*: nome do fluxo ou etapa.
+- *on*: quando ocorrerá o workflow.
+- *jobs*: as etapas que o fluxo de trabalho deve percorrer quando for ativado.
+    - *deploy*: etapa de lançamento de uma aplicação.
+    - *build*: etapa de montagem de uma aplicação no computador.
+- *steps*: as tarefas que uma etapa do fluxo deve seguir.
+- *run*: executa um comando no terminal.
+
+Há mais algumas palavras usadas nos fluxos do GitHub, mas perceba que não é difícil de entender e configurar. Sem contar que ao configurar um fluxo, você pode procurar por trechos ou etapas de fluxo num menu lateral.
+
+As possibilidades são imensas. Alguns dos fluxos de trabalhos mais aplicados são:
+
+### Adiçao em issues:
+
+Em projetos Open Source, sempre há um certo fluxo de issues sendo postadas, sejam essas sendo de sugestões de funcionalidades ou relato de bugs. Para facilitar a vida das contribuídores, é possível criar fluxos que a cada inserção de issues, o GitHub classifica a issue com uma tag "Não lida" ou "Urgente".
+
+Você também pode adicionar um script que leia as informações básicas do sistema do usuário quando um alguém cria uma issue e as adicione em sua descrição.
+
+### Testes
+
+Uma das ferramentas mais comuns às entregas contínuas são o uso de testes que exigem critérios específicos para gerarem um resultado limpo de bugs. Há centenas de fluxos no GitHub Actions que permitem a chamada dos seus scripts de teste quando há solicitações de Pull Requests. Isso poupa o trabalho do contribuidor ter que importar e testar o código por si mesmo, sem contar que já dá uma respota imediata parcial se a Pull Request será ou não aceita.
+
+
+### Lints
+
+Lints são ferramentas que checam se as políticas e padrões usados no desenvolvimento e certas linguagens e frameworks estão sendo respeitadas. É um recurso essencial para garantir uma qualidade contínua nos códigos produzidos, sem contar que ajuda em evitar bugs e no entendimento do código por outros desenvolvedores. Há várias bibliotecas e aplicativos de linters disponíveis por aí e o GitHub Actions consegue facilmente criar um Workflow que chame essas ferramentas. Há vários pré-prontos por sinal.
+
+### GitHub Pages
+
+Sendo um recurso do Actions usado por todo tipo de desenvolvedor, o GitHub Pages é uma forma de hospedar e lançar seus sites estáticos sem pagar nada. É possível lançar um site no Pages através de um arquivo Html/CSS/Javascript, de templates como os do Jekylls e MkDocs e até de linguagens próprias como Hugo.
+
+Criar uma página com o Pages é na verdade bem mais fácil do que qualquer outro fluxo do Actions, principalmente se não estiver usando um framework. É só:
+1. Adicionar seu arquivos do site no diretório superior ou numa pasta docs.
+2. Ir na aba de Configurações e selecionar a aba Pages.
+3. Selecionar a branch e a pasta que você colocou o index.html do seu site.
+4. Espere o deploy ser realizado (demora uns 2 minutos) e um link será gerado na aba Actions para o seu site.
+
+Caso o index.html do seu site não seja um filho direto da pasta docs ou da /(root), prefira fazer isso pelo através da aba Actions do repositório.
+<br><br><br>
+
+# Conclusão
+
+Assim encerramos esse longo post. De fato há vários outros recursos interessantes tanto no Git como no GitHub que poderiam entrar aqui, mas eu tentei condensar ao máximo para as coisas que de fato foram úteis para mim ao longo do aprendizado. Espero que alguém se beneficie do que escrevi e que meus amigos não tenham mais tanto medo do Git e GitHub.
+Obrigado.
+<br><br><br>
+Autor: Raphael Mendes da Silva
+
+Ano: 2023
+
+Cargo: Estudante da UnB
