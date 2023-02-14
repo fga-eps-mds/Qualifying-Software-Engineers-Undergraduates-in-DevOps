@@ -214,7 +214,7 @@ O Git faz automaticamente um *git merge* quando você usa um *git pull*.
 
 O GitHub também usa o git merge com uma ferramenta gráfica em seu site chamada *Pull Request*. Para iniciantes, o Pull Request é muito mais intuitivo e controlado, portanto recomendo sua utilização no lugar do git merge em boa parte das situações básicas.
 
-    CURIOSIDADE: o comando git pull é na verdade o mesmo que chamar um git fetch, que importa as alterações de outro repositório, e logo depois um git merge, que mescla as alterações importadas no repositório. O merge pode ser usado em operações entre repositórios porque elas nada mais são do que operações entre branches de diferentes repositórios.
+**CURIOSIDADE: o comando git pull é na verdade o mesmo que chamar um git fetch, que importa as alterações de outro repositório, e logo depois um git merge, que mescla as alterações importadas no repositório. O merge pode ser usado em operações entre repositórios porque elas nada mais são do que operações entre branches de diferentes repositórios.**
 
 ## Resolvendo conflitos de versões
 
@@ -310,7 +310,7 @@ A capa de qualquer repositórios no GitHub é o ReadMe. Sendo um arquivo em form
 
 Você também pode inserir mais o que quiser no Readme, não sinta-se preso a esse padrão. O importante é que qualquer tipo de usuário entenda o que fazer a respeito do seu projeto.
 
-    AVISO: o Readme, assim como o repositório, normalmente são vistos por desenvolvedores e possíveis colaboradores futuros. Sempre tenha em mente o público que acessa o GitHUb. Visto isso, um Readme não é muito adequado para uma capa de venda do produto, algo assim seria melhor feito em páginas web, como através do GitHub Pages.
+**AVISO: o Readme, assim como o repositório, normalmente são vistos por desenvolvedores e possíveis colaboradores futuros. Sempre tenha em mente o público que acessa o GitHUb. Visto isso, um Readme não é muito adequado para uma capa de venda do produto, algo assim seria melhor feito em páginas web, como através do GitHub Pages.**
 
 ## Organização e Comunicação com Issues
 
