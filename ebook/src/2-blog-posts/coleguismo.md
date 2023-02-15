@@ -50,4 +50,3 @@ Claro, é importante destacar que o uso dessas habilidades técnicas em equipe �
 Aproveite sua jornada!
 
 Tchau
-![bye](https://tenor.com/pt-BR/view/for-gl-vemee-gif-19551046)
