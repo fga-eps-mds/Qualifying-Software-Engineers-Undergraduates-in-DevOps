@@ -6,4 +6,6 @@
 - [Primeiras semanas](./1_Introdução/2022-2-primeiras-semanas.md)
 
 
+
 - [Blog Posts](./2-blog-posts/README.md)
+- [A prioridade é se cuidar!](./2-blog-posts/A_prioridade_eh_se_cuidar.md)
