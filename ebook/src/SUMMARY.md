@@ -8,3 +8,4 @@
 
 - [Blog Posts](./2-blog-posts/README.md)
 - [Aprender a aprender](./2-blog-posts/aprender.md)
+- [A Jornada de MDS](./2-blog-posts/a_jornada_mds.md)
