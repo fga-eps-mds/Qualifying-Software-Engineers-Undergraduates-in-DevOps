@@ -42,8 +42,7 @@ def traverse(list_of_chapters):
             traverse(chapter['Chapter']['sub_items'])
         word_count = len(chapter['Chapter']['content'].split())
         time_text = build_span_tag(count_time(word_count))
-        chapter['Chapter']['content'] = content_with_estimated_time(
-            chapter['Chapter']['content'], time_text)
+        chapter['Chapter']['content'] = chapter['Chapter']['content']
 
 
 # log(None, write='w')
