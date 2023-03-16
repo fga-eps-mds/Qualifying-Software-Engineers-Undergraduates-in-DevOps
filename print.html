@@ -33,6 +33,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "";
@@ -70,10 +71,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -81,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="1_Introdução/index.html"><strong aria-hidden="true">1.</strong> 1. Introdução</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="1_Introdução/2021-2.html"><strong aria-hidden="true">1.1.</strong> 2021-2</a></li><li class="chapter-item "><a href="1_Introdução/2022-2-primeiras-semanas.html"><strong aria-hidden="true">1.2.</strong> 2022-2-Primeiras-Semanas</a></li><li class="chapter-item "><a href="1_Introdução/2022-2.html"><strong aria-hidden="true">1.3.</strong> 2022-2</a></li></ol></li><li class="chapter-item expanded "><a href="2-blog-posts/index.html"><strong aria-hidden="true">2.</strong> 2-Blog-Posts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="2-blog-posts/aprender.html"><strong aria-hidden="true">2.1.</strong> Aprender</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="1_Introdução/index.html"><strong aria-hidden="true">1.</strong> 1. Introdução</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="1_Introdução/2021-2.html"><strong aria-hidden="true">1.1.</strong> 2021-2</a></li><li class="chapter-item "><a href="1_Introdução/2022-2-primeiras-semanas.html"><strong aria-hidden="true">1.2.</strong> 2022-2-Primeiras-Semanas</a></li><li class="chapter-item "><a href="1_Introdução/2022-2.html"><strong aria-hidden="true">1.3.</strong> 2022-2</a></li><li class="chapter-item "><a href="1_Introdução/ApresentacaoR2.html"><strong aria-hidden="true">1.4.</strong> Apresentacaor2</a></li></ol></li><li class="chapter-item expanded "><a href="2-blog-posts/index.html"><strong aria-hidden="true">2.</strong> 2-Blog-Posts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="2-blog-posts/aprender.html"><strong aria-hidden="true">2.1.</strong> Aprender</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -564,7 +567,50 @@ Gitpage - reaproveitar tema/estrutura de outro time, etc.</li>
 <tr><td style="text-align: center"></td><td style="text-align: center">Terça-feira</td><td></td></tr>
 <tr><td style="text-align: center"></td><td style="text-align: center">Quinta-feira</td><td>Entrega notas final - revisão</td></tr>
 </tbody></table>
-</div><div style="break-before: page; page-break-before: always;"></div><h1 id="posts"><a class="header" href="#posts">Posts</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="release-de-software"><a class="header" href="#release-de-software">Release de Software</a></h1>
+<p>O release de software é o processo de lançamento de uma nova versão de um software para o público. É uma etapa importante do ciclo de vida do desenvolvimento de software, que permite que os usuários experimentem e aproveitem as novas funcionalidades e correções de bugs. Os releases podem ser classificados em várias categorias, como major releases (que incluem grandes mudanças e novas funcionalidades), minor releases (que incluem pequenas correções e melhorias), ou patches (que corrigem bugs críticos). O processo de release é geralmente gerenciado pelo time de desenvolvimento de software e inclui testes extensivos antes de ser lançado para o público. Para os alunos universitários, é importante compreender o conceito de release de software para entender como os softwares são desenvolvidos e lançados, e para ter uma ideia do que esperar quando usam um software.</p>
+<p>Os artefatos esperados em uma release de software incluem:</p>
+<ul>
+<li>Código-fonte: a última versão do código-fonte, já testado e aprovado para lançamento.</li>
+<li>Documentação do usuário: manual de usuário, guias de início rápido e ajuda on-line para os novos recursos e funcionalidades.</li>
+<li>Documentação técnica: especificações técnicas, diagramas e outros documentos técnicos que descrevem como o software funciona.</li>
+<li>Testes: relatórios de testes que mostram que o software passou em todos os testes e está pronto para o lançamento.</li>
+<li>Pacotes de instalação: arquivos necessários para instalar o software em diferentes plataformas.</li>
+<li>Notas de lançamento: descrição detalhada das novas funcionalidades, correções de bugs e outros aprimoramentos incluídos na nova versão.</li>
+<li>Comunicação de lançamento: anúncio oficial da nova versão para os usuários e a mídia, incluindo e-mails, boletins informativos e atualizações nas redes sociais.</li>
+</ul>
+<p>Estes artefatos são importantes para garantir que a nova versão do software seja facilmente compreendida e utilizada pelos usuários, e para documentar as mudanças feitas no software durante o processo de desenvolvimento.</p>
+<h1 id="r1r2"><a class="header" href="#r1r2">R1/R2</a></h1>
+<p>O principal objetivo das apresentações da R1/R2 na disciplina MDS é evidenciar o aprendizado.
+Evidenciar que tanto de forma individual quanto coletiva, são capazes de compreender os conceitos apresentados em sala de aula, e como eles foram aplicados no projeto desenvolvido.</p>
+<p>Considere que todas as pessoas que forem assistir a apresentação que forem avaliar já leu todo o conteudo disponível no repositório do projeto. E que parte dos ouvintes
+da apresentação não vão avaliar o projeto e estão interessados no produto de software que estão propondo. Logo, foque nos elementos da proposta, e apresente o que 
+não está disponível no github.</p>
+<p>O que queremos enteder eh:</p>
+<ul>
+<li>
+<p>qual a proposta do produto de software?</p>
+</li>
+<li>
+<p>Mostrar a jornada do usuario na sua aplicacao ? (aplicacao funcionando.. soh as principais funcionalidades)</p>
+</li>
+<li>
+<p>Quais foram as lições aprendidas durante o projeto ? (aqui estão livres para falar tanto dos aspectos positivos quanto negativos)</p>
+</li>
+<li>
+<p>Quais foram os impactos das práticas ágeis na forma como vocês desenvolveram o projeto. ser especificos. Ex: como a retrospectiva ajudou na gestao de riscos e aumento da produtividade, etc</p>
+</li>
+<li>
+<p>Como vocês interpretam as métricas do projeto de vcs (burndown, velocity, issues abertas/fechadas)</p>
+</li>
+<li>
+<p>Qual a complexidade técnica da solucao proposta? </p>
+</li>
+</ul>
+<h1 id="dicas"><a class="header" href="#dicas">Dicas</a></h1>
+<p>Como fazer boas apresentações
+Dicas de slides -  https://www.ime.usp.br/~kon/ResearchStudents/dicasSlides.html</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="posts"><a class="header" href="#posts">Posts</a></h1>
 <p>Essa seção é destinada aos blog post feitos pelos alunos</p>
 <h1 id="como-publicar-um-post"><a class="header" href="#como-publicar-um-post">Como publicar um post</a></h1>
 <ul>
@@ -721,5 +767,6 @@ Bom curso e nos encontramos por aí, seja na Universidade, seja nas comunidades,
         });
         </script>
 
+    </div>
     </body>
 </html>

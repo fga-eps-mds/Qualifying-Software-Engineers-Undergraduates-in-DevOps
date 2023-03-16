@@ -32,6 +32,7 @@
 
     </head>
     <body>
+    <div id="body-container">
         <!-- Provide site root to javascript -->
         <script>
             var path_to_root = "../";
@@ -69,10 +70,12 @@
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
             var html = document.querySelector('html');
-            var sidebar = 'hidden';
+            var sidebar = null;
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
             }
             html.classList.remove('sidebar-visible');
             html.classList.add("sidebar-" + sidebar);
@@ -80,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../1_Introdução/index.html"><strong aria-hidden="true">1.</strong> 1. Introdução</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../1_Introdução/2021-2.html"><strong aria-hidden="true">1.1.</strong> 2021-2</a></li><li class="chapter-item "><a href="../1_Introdução/2022-2-primeiras-semanas.html"><strong aria-hidden="true">1.2.</strong> 2022-2-Primeiras-Semanas</a></li><li class="chapter-item "><a href="../1_Introdução/2022-2.html"><strong aria-hidden="true">1.3.</strong> 2022-2</a></li></ol></li><li class="chapter-item expanded "><a href="../2-blog-posts/index.html"><strong aria-hidden="true">2.</strong> 2-Blog-Posts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2-blog-posts/aprender.html" class="active"><strong aria-hidden="true">2.1.</strong> Aprender</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../1_Introdução/index.html"><strong aria-hidden="true">1.</strong> 1. Introdução</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item "><a href="../1_Introdução/2021-2.html"><strong aria-hidden="true">1.1.</strong> 2021-2</a></li><li class="chapter-item "><a href="../1_Introdução/2022-2-primeiras-semanas.html"><strong aria-hidden="true">1.2.</strong> 2022-2-Primeiras-Semanas</a></li><li class="chapter-item "><a href="../1_Introdução/2022-2.html"><strong aria-hidden="true">1.3.</strong> 2022-2</a></li><li class="chapter-item "><a href="../1_Introdução/ApresentacaoR2.html"><strong aria-hidden="true">1.4.</strong> Apresentacaor2</a></li></ol></li><li class="chapter-item expanded "><a href="../2-blog-posts/index.html"><strong aria-hidden="true">2.</strong> 2-Blog-Posts</a><a class="toggle"><div>❱</div></a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../2-blog-posts/aprender.html" class="active"><strong aria-hidden="true">2.1.</strong> Aprender</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -290,5 +293,6 @@ Bom curso e nos encontramos por aí, seja na Universidade, seja nas comunidades,
         <!-- Custom JS scripts -->
 
 
+    </div>
     </body>
 </html>
