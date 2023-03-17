@@ -1,0 +1,7 @@
+# Show Me the Code
+## O que é o show me the code?
+Uma sessão "Show Me the Code", tem objetivo revisar o progresso da equipe, identificar possíveis problemas e dar dicas para melhorias. Isso permite que todos da equipe compartilhem suas perspectivas, contribuam com ideias e identifiquem pontos fracos ou oportunidades de melhoria.
+## Como funciona na disciplina?
+No caso da disciplina Métodos de desenvolvimento de software (MDS), a professoria pedia para que cada grupo fosse a frente da sala exibir seu progresso, em um tempo determinado, para ela e ao resto da turma. E assim a professora consegue acompanhar o andamento de cada equipe e ajudar de alguma forma no desenvolvimento do projeto, já que em MDS esse desenvolvimento fica por conta dos próprios alunos. Ao final da apresentação, a professora fazia perguntas para entender mais sobre o projeto e assim poder fazer críticas construtivas e dar dicas para os alunos se organizarem melhor e ter um melhor rendimento final do projeto.
+## Como o show me the code te ajuda?
+Apresentar algo na frente da turma pode ser algo que te deixa ansioso, ainda mais sabendo que provavelmente você receberá criticas sobre sua apresentação, porém com a prática, vai ficando cada vez mais fácil. E assim o show me the code é uma excelente maneira para perder um pouco dessa ansiedade ao apresentar e de garantir que o progresso do projeto esteja no caminho certo, promover a colaboração entre equipes e melhorar a qualidade do código.
