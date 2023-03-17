@@ -9,3 +9,4 @@
 
 - [Blog Posts](./2-blog-posts/README.md)
 - [Aprender a aprender](./2-blog-posts/aprender.md)
+- [Aprenda a se livrar de uma vez da síndrome do estudante!](./2-blog-posts/sindrome_do_estudante.md)
