@@ -9,3 +9,4 @@
 
 - [Blog Posts](./2-blog-posts/README.md)
 - [Aprender a aprender](./2-blog-posts/aprender.md)
+- [Verdade - _estudo técnico filosófico sobre o desenvolvimento de software_](./2-blog-posts/verdade.md)
