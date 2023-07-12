@@ -9,3 +9,4 @@
 
 - [Blog Posts](./2-blog-posts/README.md)
 - [Aprender a aprender](./2-blog-posts/aprender.md)
+- [Consistência e Planejamento](./2-blog-posts/consistencia_e_planejamento.md)
