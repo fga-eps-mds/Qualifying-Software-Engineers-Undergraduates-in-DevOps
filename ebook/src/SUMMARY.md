@@ -9,3 +9,4 @@
 
 - [Blog Posts](./2-blog-posts/README.md)
 - [Aprender a aprender](./2-blog-posts/aprender.md)
+- [Se passar vai formar](./2-blog-posts/se_passar_vai_formar.md)
